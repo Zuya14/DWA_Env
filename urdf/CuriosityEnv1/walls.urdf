@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<robot name="wall">
+    <link name="origin">]
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <mass value=".0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+    </link>
+
+    <link name="wall">
+
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <mass value=".0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+
+        <!-- <visual>
+            <origin rpy="0 0 0" xyz="0 3.875 1"/>
+            <geometry>
+                <box size="8.9 0.15 2"/>
+            </geometry>
+            <material name="WallGreen">
+                <color rgba="0.584 0.776 0.722 1" />
+            </material>
+        </visual>
+
+        <visual>
+            <origin rpy="0 0 0" xyz="0 -3.875 1"/>
+            <geometry>
+                <box size="8.9 0.15 2"/>
+            </geometry>
+        </visual>
+
+        <visual>
+            <origin rpy="0 0 0" xyz="-4.375 0 1"/>
+            <geometry>
+                <box size="0.15 7.9 2"/>
+            </geometry>
+        </visual>
+    
+        <visual>
+            <origin rpy="0 0 0" xyz="4.375 0 1"/>
+            <geometry>
+                <box size="0.15 7.9 2"/>
+            </geometry>
+        </visual>
+    
+
+        <visual>
+            <origin rpy="0 0 0" xyz="-3.16 0.875 1"/>
+            <geometry>
+                <box size="2.28 0.15 2"/>
+            </geometry>
+        </visual>
+
+        <visual>
+            <origin rpy="0 0 0" xyz="-0.23 0.875 1"/>
+            <geometry>
+                <box size="1.66 0.15 2"/>
+            </geometry>
+        </visual>
+
+
+        <visual>
+            <origin rpy="0 0 0" xyz="1.38 1.375 1"/>
+            <geometry>
+                <box size="1.56 0.15 2"/>
+            </geometry>
+        </visual>
+
+        <visual>
+            <origin rpy="0 0 0" xyz="3.71 1.375 1"/>
+            <geometry>
+                <box size="1.18 0.15 2"/>
+            </geometry>
+        </visual>
+        
+
+        <visual>
+            <origin rpy="0 0 0" xyz="1.38 -0.525 1"/>
+            <geometry>
+                <box size="1.56 0.15 2"/>
+            </geometry>
+        </visual>
+
+        <visual>
+            <origin rpy="0 0 0" xyz="3.71 -0.525 1"/>
+            <geometry>
+                <box size="1.18 0.15 2"/>
+            </geometry>
+        </visual>
+
+
+        <visual>
+            <origin rpy="0 0 0" xyz="0.525 2.3 1"/>
+            <geometry>
+                <box size="0.15 3 2"/>
+            </geometry>
+        </visual>
+
+
+        <visual>
+            <origin rpy="0 0 0" xyz="1.605 -2.2 1"/>
+            <geometry>
+                <box size="0.15 3.2 2"/>
+            </geometry>
+        </visual> -->
+
+
+
+        <!-- 外周 -->
+        <collision>
+            <origin rpy="0 0 0" xyz="0 3.875 1"/>
+            <geometry>
+                <box size="8.9 0.15 2"/>
+            </geometry>
+        </collision>
+
+        <collision>
+            <origin rpy="0 0 0" xyz="0 -3.875 1"/>
+            <geometry>
+                <box size="8.9 0.15 2"/>
+            </geometry>
+        </collision>
+
+        <collision>
+            <origin rpy="0 0 0" xyz="-4.375 0 1"/>
+            <geometry>
+                <box size="0.15 7.9 2"/>
+            </geometry>
+        </collision>
+    
+        <collision>
+            <origin rpy="0 0 0" xyz="4.375 0 1"/>
+            <geometry>
+                <box size="0.15 7.9 2"/>
+            </geometry>
+        </collision>
+    
+
+        <collision>
+            <origin rpy="0 0 0" xyz="-3.16 0.875 1"/>
+            <geometry>
+                <box size="2.28 0.15 2"/>
+            </geometry>
+        </collision>
+
+        <collision>
+            <origin rpy="0 0 0" xyz="-0.23 0.875 1"/>
+            <geometry>
+                <box size="1.66 0.15 2"/>
+            </geometry>
+        </collision>
+
+
+        <collision>
+            <origin rpy="0 0 0" xyz="1.38 1.375 1"/>
+            <geometry>
+                <box size="1.56 0.15 2"/>
+            </geometry>
+        </collision>
+
+        <collision>
+            <origin rpy="0 0 0" xyz="3.71 1.375 1"/>
+            <geometry>
+                <box size="1.18 0.15 2"/>
+            </geometry>
+        </collision>
+        
+
+        <collision>
+            <origin rpy="0 0 0" xyz="1.38 -0.525 1"/>
+            <geometry>
+                <box size="1.56 0.15 2"/>
+            </geometry>
+        </collision>
+
+        <collision>
+            <origin rpy="0 0 0" xyz="3.71 -0.525 1"/>
+            <geometry>
+                <box size="1.18 0.15 2"/>
+            </geometry>
+        </collision>
+
+
+        <collision>
+            <origin rpy="0 0 0" xyz="0.525 1.295 1"/>
+            <geometry>
+                <box size="0.15 0.99 2"/>
+            </geometry>
+        </collision>
+
+        <collision>
+            <origin rpy="0 0 0" xyz="0.525 3.275 1"/>
+            <geometry>
+                <box size="0.15 1.05 2"/>
+            </geometry>
+        </collision>
+
+
+        <collision>
+            <origin rpy="0 0 0" xyz="1.605 -2.2 1"/>
+            <geometry>
+                <box size="0.15 3.2 2"/>
+            </geometry>
+        </collision>
+
+    </link>
+
+    <joint name="origin_to_wall" type="fixed">
+        <parent link="origin"/>
+        <child link="wall"/>
+        <origin xyz="4.3 3.8 0"/>
+    </joint>
+
+</robot>

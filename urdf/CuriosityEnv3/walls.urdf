@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<robot name="wall">
+    <link name="origin">]
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <mass value=".0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+    </link>
+
+    <link name="wall">
+
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <mass value=".0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+
+        <collision>
+            <origin rpy="0 0 0" xyz="-4.575 0 1"/>
+            <geometry>
+                <box size="0.15 4.3 2"/>
+            </geometry>
+        </collision> 
+
+        <collision>
+            <origin rpy="0 0 0" xyz="4.575 0 1"/>
+            <geometry>
+                <box size="0.15 4.3 2"/>
+            </geometry>
+        </collision> 
+
+        <collision>
+            <origin rpy="0 0 0" xyz="0 -2.075 1"/>
+            <geometry>
+                <box size="9.3 0.15 2"/>
+            </geometry>
+        </collision> 
+
+        <collision>
+            <origin rpy="0 0 0" xyz="0 2.075 1"/>
+            <geometry>
+                <box size="9.3 0.15 2"/>
+            </geometry>
+        </collision> 
+
+
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 1"/>
+            <geometry>
+                <box size="5.0 0.15 2"/>
+            </geometry>
+        </collision> 
+
+
+        <collision>
+            <origin rpy="0 0 0" xyz="2.425 0.9625 1"/>
+            <geometry>
+                <box size="0.15 2.075 2"/>
+            </geometry>
+        </collision> 
+
+    </link>
+
+    <joint name="origin_to_wall" type="fixed">
+        <parent link="origin"/>
+        <child link="wall"/>
+        <origin xyz="4.5 2.0 0"/>
+    </joint>
+
+</robot>
